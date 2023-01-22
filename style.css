@@ -38,6 +38,13 @@ button {
 
     font: normal 600 16px 'Inter', sans-serif;
     line-height: 125%;
+
+    cursor: pointer;
+    transition: 200ms;
+}
+
+button:hover {
+    transform: scale(1.1);
 }
 
 #form-habits {
@@ -100,6 +107,7 @@ input {
     border-radius: 8px;
 
     background-color: #18181B;
+    cursor: pointer;
 }
 
 input:checked {

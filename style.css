@@ -19,6 +19,7 @@ header {
     justify-content: space-between;
 
     padding: 48px;
+    background-color: black;
 
     position: fixed;
     width: 100%;
@@ -63,7 +64,7 @@ button:hover {
 }
 
 .habit {
-    width: 64px;
+    width: 200px;
     height: 64px;
 
     font-size: 32px;
@@ -71,6 +72,11 @@ button:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.habit-description {
+    padding-left: 10px;
+    font: normal 700 20px 'Roboto Mono';
 }
 
 .days {

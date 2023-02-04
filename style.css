@@ -18,11 +18,18 @@ header {
     align-items: center;
     justify-content: space-between;
 
-    padding: 48px;
+    padding: 2% 2.5%;
     background-color: black;
 
     position: fixed;
     width: 100%;
+}
+
+.buttons-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 button {
@@ -50,9 +57,9 @@ button:hover {
 
 #form-habits {
     display: flex;
+    justify-content: space-between;
 
-    padding: 182px 48px 48px;
-    width: fit-content;
+    padding: 182px 2.5% 0px 2.5%;
 }
 
 .habits {
@@ -81,8 +88,30 @@ button:hover {
 
 .days {
     display: flex;
-    gap: 48px;
+    gap: 40px;
+    
+    width: 85.5%;
     margin-left: 32px;
+    padding-bottom: 20px;
+    
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    overflow: auto;
+}
+
+::-webkit-scrollbar {
+    height: 10px;
+
+    background-color: #18181B;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+
+    background-color: #27272A;
 }
 
 .day {
@@ -96,9 +125,7 @@ button:hover {
 
     font: normal 700 20px 'Roboto Mono';
     line-height: 125%;
-
     color: #A1A1AA;
-
     text-align: center;
 }
 
@@ -121,8 +148,20 @@ input:checked {
     border: 2px solid #A78BFA ;
 }
 
-@media (max-width: 570px) {
+@media screen and (max-width: 700px) {
     button div {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .habit {
+        width: auto;
+        font-size: 50px;
+        justify-content: flex-start;
+    }
+
+    form span {
         display: none;
     }
 }
